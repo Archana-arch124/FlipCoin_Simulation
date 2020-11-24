@@ -1,5 +1,6 @@
 #Welcome to Flip Coin Simulation Problem
 
+#!/bin/bash
 num0fHead=0
 numOfTail=0
 declare -A TossCoin
@@ -33,7 +34,6 @@ done
 echo "Head won $numOfHead times"
 echo "Tail won $numOfTail times"
 
-#condition to check who won
 if [[$numOfHead -gt $numOfTail]]
 then
     echo "Head wins by $(($numOfHead-$numOfTail))"
